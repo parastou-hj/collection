@@ -14,217 +14,372 @@
 <body>
     <header>
         <div class="header-container pt-3 pb-1">
-            <div class="container-fluid">
+            <div class="container-fluid px-0">
                 <div class="row col-xl-11">
-                    <div class="col-lg-1">
-                        <a href="#">
-                            <img src="./images/logo.png" alt="">
+                    <!-- Mobile Menu Button -->
+                    
+                    
+                    <div class="col-lg-1 col-7 order-1 d-flex justify-content-between">
+                        <div class="mobile-menu-toggle d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a href="#" class="logo-link">
+                            <img src="./images/logo.png" alt="کلکسیون" class="logo">
                         </a>
                     </div>
-                    <div class="col-lg-8 pe-5 ">
+                    
+                    <div class="col-lg-8 pe-lg-5 order-3 order-lg-2">
                         <div class="search-input">
                             <input type="text" placeholder="جست و جو در کلکسیون 110...">
                             <img src="./images/search.png" alt="">
                         </div>
+                        <!-- Desktop Navigation -->
                         <nav class="main-nav d-none d-lg-block">
                             <ul>
-                                <li >
+                                <li>
                                     <a href="#">
-                                      <span>صفحه اصلی</span>
-                                      
+                                        <span>صفحه اصلی</span>
                                     </a>
-                                  </li>
-                              <li class="has-megamenu" data-megamenu-target="#products-mega-menu">
-                                  <a href="#">
-                                    <span>اسکناس ها</span>
-                                    <img src="./images/flesh-down.png" alt="">
-                                  </a>
-                                  
-                              </li>
-                              <li class="has-megamenu" data-megamenu-target="#services-mega-menu">
-                                <a href="#">
-                                  <span>سکه ها</span>
-                                  <img src="./images/flesh-down.png" alt="">
-                                </a>
-                              </li>
-                              <li class="has-submenu" >
-                                <a href="#">
-                                  <span class="">لوازم جانبی</span>
-                                  <img src="./images/flesh-down.png" alt="">
-                                </a>
-                                <div class="sm-sub-menu p-2">
-                                    <div class="about-sub-menu-item p-2 mb-2">زیر منو تستی</div>
-                                    <div class="about-sub-menu-item p-2 mb-2">زیر منو تستی</div>
-                                    <div class="about-sub-menu-item p-2 mb-2">زیر منو تستی</div>
-                                    <div class="about-sub-menu-item p-2 mb-2">زیر منو تستی</div>
-                                  </div>
-                              </li>
-                             
-                              <li >
-                                <a href="#">
-                                  <span>دانستنی ها</span>
-                                  
-                                </a>
-                              </li>
-                              <li >
-                                <a href="#">
-                                  <span>درباره ما</span>
-                                 
-                                </a>
-                              </li>
-                             
-                           
-                          </ul>  
-                          <div id="products-mega-menu" class="mega-menu">
-                            <div class="pro-menu px-0">
-                                <div class="pro-tabs">
-                                    <div class="p-tab" data-tab="tissue-cultured">
-                                        <div><i class="fa-solid fa-leaf fa-fw"></i><span>گیاهان کشت بافت</span></div>
-                                        <i class="fa-solid fa-chevron-left"></i>
+                                </li>
+                                <li class="has-megamenu" data-megamenu-target="#products-mega-menu">
+                                    <a href="#">
+                                        <span>اسکناس ها</span>
+                                        <img src="./images/flesh-down.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="has-megamenu" data-megamenu-target="#services-mega-menu">
+                                    <a href="#">
+                                        <span>سکه ها</span>
+                                        <img src="./images/flesh-down.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">
+                                        <span class="">لوازم جانبی</span>
+                                        <img src="./images/flesh-down.png" alt="">
+                                    </a>
+                                    <div class="sm-sub-menu p-2">
+                                        <div class="about-sub-menu-item p-2 mb-2">زیر منو تستی</div>
+                                        <div class="about-sub-menu-item p-2 mb-2">زیر منو تستی</div>
+                                        <div class="about-sub-menu-item p-2 mb-2">زیر منو تستی</div>
+                                        <div class="about-sub-menu-item p-2 mb-2">زیر منو تستی</div>
                                     </div>
-                                    <div class="p-tab" data-tab="medicinal-extracts">
-                                        <div><i class="fa-solid fa-flask fa-fw"></i><span>عصاره‌های گیاهی دارویی</span></div>
-                                        <i class="fa-solid fa-chevron-left"></i>
-                                    </div>
-                                    <div class="p-tab" data-tab="metabolites">
-                                        <div><i class="fa-solid fa-vial fa-fw"></i><span>متابولیت‌های ثانویه</span></div>
-                                        <i class="fa-solid fa-chevron-left"></i>
-                                    </div>
-                                    <div class="p-tab" data-tab="gm-plants">
-                                        <div><i class="fa-solid fa-dna fa-fw"></i><span>گیاهان تراریخته</span></div>
-                                        <i class="fa-solid fa-chevron-left"></i>
-                                    </div>
-                                    <div class="p-tab" data-tab="biotech-kits">
-                                        <div><i class="fa-solid fa-box-open fa-fw"></i><span>کیت‌های بیوتکنولوژی</span></div>
-                                        <i class="fa-solid fa-chevron-left"></i>
-                                    </div>
-                                </div>
-                        
-                                <div class="pro-contents">
-                                    <div class="p-content" id="tissue-cultured">
-                                        <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه گیاهان کشت بافت</span></a>
-                                        <div class="sub-menus row">
-                                            <div class="sub-menu col-md-6 mb-3">
-                                                <a href="#">گیاهان دارویی</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">نپتا پوگونوسپرما (*Nepeta pogonosperma*)</a></div>
-                                                    <div class="s-b-item"><a href="#">آرتمزیا آوچری (*Artemisia aucheri*)</a></div>
-                                                    <div class="s-b-item"><a href="#">دراکوسفالوم کوتسچی (*Dracocephalum kotschyi*)</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="sub-menu col-md-6 mb-3">
-                                                <a href="#">گیاهان زینتی</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">رزهای کشت بافتی</a></div>
-                                                    <div class="s-b-item"><a href="#">ارکیده‌های کشت بافتی</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="p-content" id="medicinal-extracts">
-                                        <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه عصاره‌های گیاهی دارویی</span></a>
-                                        <div class="sub-menus row">
-                                            <div class="sub-menu col-md-6 col-lg-4 mb-3">
-                                                <a href="#">عصاره‌های ریشه مویی</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">عصاره نپتا پوگونوسپرما</a></div>
-                                                    <div class="s-b-item"><a href="#">عصاره آرتمزیا آوچری</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="sub-menu col-md-6 col-lg-4 mb-3">
-                                                <a href="#">عصاره‌های کل گیاه</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">عصاره دراکوسفالوم کوتسچی</a></div>
-                                                    <div class="s-b-item"><a href="#">عصاره سایر گیاهان دارویی</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="sub-menu col-md-6 col-lg-4 mb-3">
-                                                <a href="#">روغن‌های گیاهی</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">روغن اسانسی نپتا</a></div>
-                                                    <div class="s-b-item"><a href="#">روغن اسانسی آرتمزیا</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="p-content" id="metabolites">
-                                        <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه متابولیت‌های ثانویه</span></a>
-                                        <div class="sub-menus row">
-                                            <div class="sub-menu col-md-6 mb-3">
-                                                <a href="#">فلاونوئیدها</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">فلاونوئیدهای استخراج‌شده از نپتا</a></div>
-                                                    <div class="s-b-item"><a href="#">فلاونوئیدهای آرتمزیا</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="sub-menu col-md-6 mb-3">
-                                                <a href="#">ترپنوئیدها</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">ترپنوئیدهای دراکوسفالوم</a></div>
-                                                    <div class="s-b-item"><a href="#">ترپنوئیدهای ریشه مویی</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="p-content" id="gm-plants">
-                                        <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه گیاهان تراریخته</span></a>
-                                        <div class="sub-menus row">
-                                            <div class="sub-menu col-md-6 mb-3">
-                                                <a href="#">گیاهان دارویی تراریخته</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">نپتا تراریخته با متابولیت بالا</a></div>
-                                                    <div class="s-b-item"><a href="#">آرتمزیا تراریخته مقاوم</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="sub-menu col-md-6 mb-3">
-                                                <a href="#">گیاهان زراعی تراریخته</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">محصولات زراعی با ژن GUS</a></div>
-                                                    <div class="s-b-item"><a href="#">گیاهان مقاوم به تنش</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="p-content" id="biotech-kits">
-                                        <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه کیت‌های بیوتکنولوژی</span></a>
-                                        <div class="sub-menus row">
-                                            <div class="sub-menu col-md-6 mb-3">
-                                                <a href="#">کیت‌های کشت بافت</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">کیت کشت بافت گیاهان دارویی</a></div>
-                                                    <div class="s-b-item"><a href="#">کیت کشت بافت گیاهان زینتی</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="sub-menu col-md-6 mb-3">
-                                                <a href="#">کیت‌های مولکولی</a>
-                                                <div class="sub-menu-items">
-                                                    <div class="s-b-item"><a href="#">کیت استخراج DNA گیاهی</a></div>
-                                                    <div class="s-b-item"><a href="#">کیت PCR برای گیاهان</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>دانستنی ها</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>درباره ما</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Mega Menu content -->
+                           <!-- Mega Menu for Coins (سکه ها) -->
+<div id="services-mega-menu" class="mega-menu">
+    <div class="pro-menu px-0">
+        <div class="pro-tabs">
+            <div class="p-tab" data-tab="iranian-coins">
+                <div><i class="fa-solid fa-coins fa-fw"></i><span>سکه های ایرانی</span></div>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="p-tab" data-tab="foreign-coins">
+                <div><i class="fa-solid fa-globe fa-fw"></i><span>سکه های خارجی</span></div>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="p-tab" data-tab="commemorative-coins">
+                <div><i class="fa-solid fa-award fa-fw"></i><span>سکه های یادبود</span></div>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="p-tab" data-tab="historical-coins">
+                <div><i class="fa-solid fa-landmark fa-fw"></i><span>سکه های تاریخی</span></div>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="p-tab" data-tab="investment-coins">
+                <div><i class="fa-solid fa-chart-line fa-fw"></i><span>سکه های سرمایه گذاری</span></div>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+        </div>
+
+        <div class="pro-contents">
+            <!-- Iranian Coins -->
+            <div class="p-content" id="iranian-coins">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه سکه های ایرانی</span></a>
+                <div class="sub-menus row">
+                    <div class="sub-menu col-md-6 mb-3">
+                        <a href="#">سکه های قاجار</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های ناصرالدین شاه</a></div>
+                            <div class="s-b-item"><a href="#">سکه های مظفرالدین شاه</a></div>
+                            <div class="s-b-item"><a href="#">سکه های احمد شاه</a></div>
                         </div>
-                        </nav>
                     </div>
-                    <div class="col-lg-3 d-flex align-items-center justify-content-lg-end">
-                        <div class="user ps-3 ms-2">
-                            <a href="#">
-                                <span>ورود /</span>
-                                <span>ثبت نام</span>
-                            </a>
-                            <img src="./images/user.png" alt="" class="me-2">
+                    <div class="sub-menu col-md-6 mb-3">
+                        <a href="#">سکه های پهلوی</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های رضا شاه</a></div>
+                            <div class="s-b-item"><a href="#">سکه های محمدرضا شاه</a></div>
                         </div>
-                        <div class="cart me-3">
-                            <span>0</span>
-                            <img src="./images/cart.png" alt="">
+                    </div>
+                    <div class="sub-menu col-md-6 mb-3">
+                        <a href="#">سکه های جمهوری اسلامی</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های بهار آزادی</a></div>
+                            <div class="s-b-item"><a href="#">سکه های امام رضا</a></div>
+                            <div class="s-b-item"><a href="#">نیم سکه و ربع سکه</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foreign Coins -->
+            <div class="p-content" id="foreign-coins">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه سکه های خارجی</span></a>
+                <div class="sub-menus row">
+                    <div class="sub-menu col-md-4 mb-3">
+                        <a href="#">سکه های اروپایی</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های انگلستان</a></div>
+                            <div class="s-b-item"><a href="#">سکه های فرانسه</a></div>
+                            <div class="s-b-item"><a href="#">سکه های آلمان</a></div>
+                            <div class="s-b-item"><a href="#">سکه های ایتالیا</a></div>
+                        </div>
+                    </div>
+                    <div class="sub-menu col-md-4 mb-3">
+                        <a href="#">سکه های آسیایی</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های چین</a></div>
+                            <div class="s-b-item"><a href="#">سکه های ژاپن</a></div>
+                            <div class="s-b-item"><a href="#">سکه های هند</a></div>
+                            <div class="s-b-item"><a href="#">سکه های عثمانی</a></div>
+                        </div>
+                    </div>
+                    <div class="sub-menu col-md-4 mb-3">
+                        <a href="#">سکه های آمریکایی</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های ایالات متحده</a></div>
+                            <div class="s-b-item"><a href="#">سکه های کانادا</a></div>
+                            <div class="s-b-item"><a href="#">سکه های مکزیک</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commemorative Coins -->
+            <div class="p-content" id="commemorative-coins">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه سکه های یادبود</span></a>
+                <div class="sub-menus row">
+                    <div class="sub-menu col-md-6 mb-3">
+                        <a href="#">سکه های مناسبتی ایران</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های جشن های 2500 ساله</a></div>
+                            <div class="s-b-item"><a href="#">سکه های بانک مرکزی</a></div>
+                            <div class="s-b-item"><a href="#">سکه های مناسبت های ملی</a></div>
+                        </div>
+                    </div>
+                    <div class="sub-menu col-md-6 mb-3">
+                        <a href="#">سکه های یادبود جهانی</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های المپیک</a></div>
+                            <div class="s-b-item"><a href="#">سکه های جام جهانی</a></div>
+                            <div class="s-b-item"><a href="#">سکه های رویدادهای تاریخی</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Coins -->
+            <div class="p-content" id="historical-coins">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه سکه های تاریخی</span></a>
+                <div class="sub-menus row">
+                    <div class="sub-menu col-md-4 mb-3">
+                        <a href="#">سکه های باستانی</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های هخامنشی</a></div>
+                            <div class="s-b-item"><a href="#">سکه های ساسانی</a></div>
+                            <div class="s-b-item"><a href="#">سکه های اشکانی</a></div>
+                        </div>
+                    </div>
+                    <div class="sub-menu col-md-4 mb-3">
+                        <a href="#">سکه های دوران اسلامی</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های صفوی</a></div>
+                            <div class="s-b-item"><a href="#">سکه های زندیه</a></div>
+                            <div class="s-b-item"><a href="#">سکه های افشاریه</a></div>
+                        </div>
+                    </div>
+                    <div class="sub-menu col-md-4 mb-3">
+                        <a href="#">سکه های کمیاب</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های با تیراژ محدود</a></div>
+                            <div class="s-b-item"><a href="#">سکه های اشتباه ضرب</a></div>
+                            <div class="s-b-item"><a href="#">سکه های نایاب</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Coins -->
+            <div class="p-content" id="investment-coins">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i><span>همه سکه های سرمایه گذاری</span></a>
+                <div class="sub-menus row">
+                    <div class="sub-menu col-md-6 mb-3">
+                        <a href="#">سکه های طلا</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های تمام بهار آزادی</a></div>
+                            <div class="s-b-item"><a href="#">نیم سکه و ربع سکه</a></div>
+                            <div class="s-b-item"><a href="#">سکه های طلای خارجی</a></div>
+                        </div>
+                    </div>
+                    <div class="sub-menu col-md-6 mb-3">
+                        <a href="#">سکه های نقره</a>
+                        <div class="sub-menu-items">
+                            <div class="s-b-item"><a href="#">سکه های یک اونسی</a></div>
+                            <div class="s-b-item"><a href="#">مجموعه های سرمایه گذاری</a></div>
+                            <div class="s-b-item"><a href="#">سکه های پرمیوم</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+                        </nav>
+                    </div>
+                    
+                    <div class="col-lg-3 col-5 d-flex align-items-center justify-content-end order-2 order-lg-3">
+                        <div class="user-wrapper ps-3 ms-2 position-relative">
+                            <div class="user">
+                                <a href="#" class="user-toggle">
+                                    <span>ورود /</span>
+                                    <span>ثبت نام</span>
+                                    <img src="./images/user.png" alt="" class="me-2">
+                                </a>
+                            </div>
+                            <!-- User Dropdown Menu -->
+                            <div class="user-dropdown">
+                                <div class="user-dropdown-header">
+                                    <span>حساب کاربری</span>
+                                </div>
+                                <ul class="user-dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-user ml-2"></i>پروفایل</a></li>
+                                    <li><a href="#"><i class="fa fa-heart ml-2"></i>علاقه‌مندی‌ها</a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag ml-2"></i>سفارش‌های من</a></li>
+                                    <li><a href="#"><i class="fa fa-comment ml-2"></i>پیام‌ها</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out ml-2"></i>خروج</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-wrapper me-3 position-relative">
+                            <div class="cart">
+                                <span>0</span>
+                                <a href="#" class="cart-toggle">
+                                    <img src="./images/cart.png" alt="">
+                                </a>
+                            </div>
+                            <!-- Cart Dropdown Menu -->
+                            <div class="cart-dropdown">
+                                <div class="cart-dropdown-header">
+                                    <span>سبد خرید شما</span>
+                                    <small>0 محصول</small>
+                                </div>
+                                <!-- <div class="cart-dropdown-empty">
+                                    <img src="./images/empty-cart.png" alt="سبد خرید خالی" class="empty-cart-icon">
+                                    <p>سبد خرید شما خالی است</p>
+                                    <a href="#" class="btn-start-shopping">شروع خرید</a>
+                                </div> -->
+                                <div class="cart-items-container">
+                                    <ul class="cart-items">
+                                        <li class="cart-item">
+                                            <div class="cart-item-img">
+                                                <img src="./images/coin1.png" alt="محصول">
+                                            </div>
+                                            <div class="cart-item-content">
+                                                <h4>سکه 1 ریال 1351 خطی</h4>
+                                                <div class="cart-item-price">3,660,000 تومان</div>
+                                                <div class="cart-item-quantity">تعداد: 1</div>
+                                            </div>
+                                            <button class="remove-cart-item"><i class="fa fa-times"></i></button>
+                                        </li>
+                                    </ul>
+                                    <div class="cart-total">
+                                        <span>مجموع:</span>
+                                        <span>3,660,000 تومان</span>
+                                    </div>
+                                    <div class="cart-dropdown-buttons">
+                                        <a href="#" class="btn-view-cart">مشاهده سبد</a>
+                                        <a href="#" class="btn-checkout">تسویه حساب</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Side Menu -->
+        <div class="mobile-side-menu">
+            <div class="mobile-menu-header">
+                <img src="./images/logo.png" alt="کلکسیون" class="mobile-logo">
+                <div class="close-mobile-menu">×</div>
+            </div>
+            <div class="mobile-menu-search mb-3">
+                <input type="text" placeholder="جستجو...">
+                <button type="button"><i class="fa fa-search"></i></button>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li class="mobile-has-submenu">
+                        <a href="#">اسکناس ها</a>
+                        <span class="mobile-submenu-toggle">+</span>
+                        <ul class="mobile-submenu">
+                            <li><a href="#">همه اسکناس ها</a></li>
+                            <li><a href="#">اسکناس های داخلی</a></li>
+                            <li><a href="#">اسکناس های خارجی</a></li>
+                            <li><a href="#">اسکناس های کمیاب</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-has-submenu">
+                        <a href="#">سکه ها</a>
+                        <span class="mobile-submenu-toggle">+</span>
+                        <ul class="mobile-submenu">
+                            <li><a href="#">همه سکه ها</a></li>
+                            <li><a href="#">سکه های داخلی</a></li>
+                            <li><a href="#">سکه های خارجی</a></li>
+                            <li><a href="#">سکه های کمیاب</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-has-submenu">
+                        <a href="#">لوازم جانبی</a>
+                        <span class="mobile-submenu-toggle">+</span>
+                        <ul class="mobile-submenu">
+                            <li><a href="#">زیر منو تستی</a></li>
+                            <li><a href="#">زیر منو تستی</a></li>
+                            <li><a href="#">زیر منو تستی</a></li>
+                            <li><a href="#">زیر منو تستی</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">دانستنی ها</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-user mt-4">
+                <a href="#" class="mobile-login-btn">
+                    <img src="./images/user.png" alt="">
+                    <span>ورود / ثبت نام</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Overlay for mobile menu -->
+        <div class="mobile-menu-overlay"></div>
     </header>
     <main>
         <div class="baner-sec pt-4">
@@ -307,7 +462,7 @@
         <section class="products-showcase">
             <div class="container-fluid p-0">
                 <div class="row col-xl-11 product-gallery-one px-4">
-                    <div class="col-md-8 p-2">  
+                    <div class="col-md-8 col-sm-6 p-2">  
                        <div class="pro-baner-item position-relative">
                         <img src="./images/cashs.png" alt="">
                         <div class="pro-baner-txt">
@@ -316,7 +471,7 @@
                         </div>
                        </div>
                     </div>
-                    <div class="col-md-4 p-2">
+                    <div class="col-md-4 col-sm-6 p-2">
                         <div class="pro-baner-item position-relative">
                             <img src="./images/coins.png" alt="">
                             <div class="pro-baner-txt">
@@ -331,7 +486,7 @@
                 </div>
                 
                 <div class="row col-xl-11  product-gallery-two px-4">
-                    <div class="col-md-5 col-6 p-1">
+                    <div class="col-md-5 col-sm-4 p-1">
                         <div class="pro-baner-item position-relative">
                             <img src="./images/sides.png" alt="">
                             <div class="pro-baner-txt">
@@ -340,7 +495,7 @@
                             </div>
                            </div>
                     </div>
-                    <div class="col-md-4 col-6 p-1">
+                    <div class="col-md-4 col-sm-4 p-1">
                         <div class="pro-baner-item position-relative">
                             <img src="./images/news.png" alt="">
                             <div class="pro-baner-txt">
@@ -349,7 +504,7 @@
                             </div>
                            </div>
                     </div>
-                    <div class="col-md-3 col-6 p-1">
+                    <div class="col-md-3 col-sm-4 p-1">
                         <div class="pro-baner-item position-relative">
                             <img src="./images/tambr.png" alt="">
                             <div class="pro-baner-txt">
@@ -366,14 +521,17 @@
             <div class="container-fluid">
                 <div class="row col-xl-11 px-3">
                     <div class="row sale-back py-4">
-                        <div class="col-1 px-0">
-                            <div class="timer-sec d-flex flex-column justify-content-start text-center ">
-                                <div class="sale-offer-txt d-flex flex-column">
-                                    <span>پیشنهاد</span>
+                        <div class="col-md-2 px-0 py-md-3 py-2">
+                            <div class="timer-sec d-flex flex-md-column align-items-center justify-content-md-start justify-content-between text-center ">
+                                <div class="timer-sale-img d-md-none">
+                                    <img src="./images/sale-img.png" alt="">
+                                </div>
+                                <div class="sale-offer-txt d-flex flex-md-column">
+                                    <span class="d-none d-sm-block">پیشنهاد</span>
                                     <span>شگفت</span>
                                     <span>انگیز</span>
                                 </div>
-                                <div class="timer my-2">
+                                <div class="timer my-md-3">
                                     <div class="" id="countdown">
                                         <span id="seconds"></span>
                                         <span> : </span>
@@ -383,16 +541,16 @@
                                         
                                     </div>
                                 </div>
-                                <div class="sale-img">
+                                <div class="timer-sale-img d-none d-md-block my-md-4">
                                     <img src="./images/sale-img.png" alt="">
                                 </div>
-                                <a href="#">
+                                <a href="#" class="more-sale">
                                     <span>مشاهده همه</span>
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-11">
+                        <div class="col-md-10 px-0">
                             <div class="owl-carousel cowl-theme" id="sale-owl">
                                 <div class="sale-card p-1">
                                  <div class="sale-item">
@@ -883,34 +1041,39 @@
                     </div>
                     <div class="owl-carousel cowl-theme" id="customer-owl">
                         <div class="sale-card p-2">
-                         <div class="sale-item p-3">
-                            <a href="#">
-                                <div class="card-header d-flex">
-                                    <div class="avatar">
-                                        <img src="./images/avatar1.png" alt="">
-                                    </div>
-                                    <div class="customer-name d-flex flex-column me-2">
-                                        <span>جواد خواجه پور</span>
-                                        <span class="text-gray">( 10 خرید موفق)</span>
-                                    </div>
-                                    
-                                </div>
-                                <div class="customer-date my-2">15 فروردین 1404</div>
-                                <div class="customer-card-txt">
-                                    <p>با سلام خدمت کادر خوب کلکسیون 110 به قیمت جناب خطیب زمانی و ضمن تبریک سال نو خدمت شما یک سوال گفتنم این سوال را...</p>
-                                    <div class="stars"></div>
-                                    <div class="customer-social d-flex justify-content-between">
-                                        <div class="d-flex">
-                                            <img src="./images/telegram-c.png" alt="">
-                                            <img class="me-2" src="./images/insta-c.png" alt="">
+                            <div class="sale-item p-3">
+                                <a href="#">
+                                    <div class="card-header d-flex">
+                                        <div class="avatar">
+                                            <img src="./images/avatar1.png" alt="">
                                         </div>
-                                        <div class="attach">
-                                            <img src="./images/attach.png" alt="">
+                                        <div class="customer-name d-flex flex-column me-2">
+                                            <span>جواد خواجه پور</span>
+                                            <span class="text-gray">(۱۰ خرید موفق)</span>
                                         </div>
                                     </div>
-                                </div>
-                             </a>
-                         </div>
+                                    <div class="customer-date my-2">۱۵ فروردین ۱۴۰۴</div>
+                                    <div class="customer-card-txt">
+                                        <p>با سلام خدمت کادر خوب کلکسیون ۱۱۰ به قیمت جناب خطیب زمانی و ضمن تبریک سال نو خدمت شما یک سوال گفتنم این سوال را...</p>
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <div class="customer-social d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="./images/telegram-c.png" alt="">
+                                                <img class="me-2" src="./images/insta-c.png" alt="">
+                                            </div>
+                                            <div class="attach">
+                                                <img src="./images/attach.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         
                        
@@ -919,9 +1082,154 @@
                 </div>
             </div>
         </div>
+        <section class="features-section py-5">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="feature-icon-container">
+                            <img src="" alt="تضمین اصالت کالا" class="feature-icon-img">
+                            <div class="feature-caption">تضمین اصالت کالا</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="feature-icon-container">
+                            <img src="" alt="تضمین اصالت کالا" class="feature-icon-img">
+                            <div class="feature-caption">تضمین اصالت کالا</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="feature-icon-container">
+                            <img src="" alt="تضمین اصالت کالا" class="feature-icon-img">
+                            <div class="feature-caption">تضمین اصالت کالا</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="feature-icon-container">
+                            <img src="" alt="تضمین اصالت کالا" class="feature-icon-img">
+                            <div class="feature-caption">تضمین اصالت کالا</div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
 
     </main>
-
+    <footer class="site-footer">
+        <div class="container-fluid">
+            <div class="row col-xl-11 py-4">
+                <!-- Logo and Back to Top -->
+                <div class=" mb-4 mb-lg-0 d-flex justify-content-between">
+                    <div class="footer-logo mb-3">
+                        <img src="./images/logo.png" alt="کلکسیون 110" class="img-fluid">
+                    </div>
+                    <a href="#" class="back-to-top">
+                        <i class="fa fa-chevron-up ml-2"></i>
+                        بازگشت به بالا
+                    </a>
+                </div>
+            </div>
+            <div class="row col-xl-11">
+                <div class="col-lg-9 col-md-12">
+                    <div class="row">
+                        <!-- اطلاعات -->
+                        <div class="col-md-3  mb-4 mb-md-0 footer-accordion">
+                            <h4 class="footer-heading">اطلاعات</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">درباره ما</a></li>
+                                <li><a href="#">تماس با ما</a></li>
+                                <li><a href="#">مشاوره و پشتیبانی</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- خدمات مشتریان -->
+                        <div class="col-md-3  mb-4 mb-md-0 footer-accordion">
+                            <h4 class="footer-heading">خدمات مشتریان</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">پاسخ به پرسش‌های متداول</a></li>
+                                <li><a href="#">رویه‌های بازگرداندن کالا</a></li>
+                                <li><a href="#">شرایط استفاده</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- راهنمای خرید -->
+                        <div class="col-md-3 mb-4 mb-md-0 footer-accordion">
+                            <h4 class="footer-heading">راهنمای خرید</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">نحوه ثبت سفارش</a></li>
+                                <li><a href="#">شیوه های پرداخت</a></li>
+                                <li><a href="#">رویه ارسال سفارش</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- تماس با ما -->
+                        <div class="col-md-3  mb-4 mb-md-0 footer-accordion">
+                            <h4 class="footer-heading">تماس با ما</h4>
+                            <div class="contact-info">
+                                <p>7 روز هفته از ساعت 9 الی 20</p>
+                                <div class="phone-section">
+                                    <p>تلفن پشتیبانی:</p>
+                                    <div class="d-flex align-items-center">
+                                        <img src="" alt="شماره تماس" class="phone-icon ml-2">
+                                        <div>
+                                            <p class="mb-1">021-91090609</p>
+                                            <p class="mb-0">021-51363836</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- همراه ما باشید -->
+                <div class="col-lg-3 col-md-12 mt-4 mt-lg-0">
+                    <h4 class="footer-heading">همراه ما باشید!</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="لینکدین"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="تلگرام"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="یوتیوب"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="واتس‌اپ"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3">
+            <div class="container-fluid">
+                <div class="row col-xl-11 mx-auto">
+                    <div class="footer-bottom-content text-center d-flex">
+                       
+                        
+                       <div>
+                        <div class="footer-description mb-3">
+                            <h2 class="footer-title">گالری کلکسیون ۱۱۰ ، محفل حرفه ای علاقمندان به مجموعه‌داری سکه و اسکناس و تمبرهای کلکسیونی است</h2>
+                            <p class="footer-text">فروشگاهی تخصصی برای خرید و فروش سکه و اسکناس و تمبر های کلکسیونی خاص و نایاب از سراسر جهان و همچنین نمونه هایی نایاب و خاص از ادوار مختلف زندگی انسان‌ها پیش از چاپ اسکناس و تولید و ضرب سکه‌ها</p>
+                        </div>
+                        
+                        <div class="footer-cta mb-3">
+                            <p class="footer-cta-text">ما را در این مسیر دنبال بفرمایید و از تخصصی و حرفه ای بودنمان در جمع آوری بهترین های کشورهای مختلف لذت ببرید ... <a href="#" class="footer-cta-link">مشاهده بیشتر</a></p>
+                        </div>
+                       </div>
+                       <div class="footer-logos mb-3">
+                        <a href="#" class="footer-logo-link">
+                            <img src="./images/logo1.png" alt="کلکسیون ۱۱۰" class="footer-bottom-logo me-3">
+                        </a>
+                        <a href="#" class="footer-logo-link">
+                            <img src="./images/logo2.png" alt="سکه ها و اسکناس ها" class="footer-bottom-logo">
+                        </a>
+                    </div>
+                        
+                       
+                    </div>
+                    <div class="footer-copyright">
+                        <p class="m-0">© کلیه حقوق این سایت متعلق به <a href="#" class="copyright-link">گالری کلکسیون ۱۱۰</a> می‌باشد.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/jquery.min.js"></script>
     <script src="./script.js"></script>
