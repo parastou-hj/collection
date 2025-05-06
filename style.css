@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #hsl(45.88deg 100% 50%) ;
+    --primary-color: hsl(45.88deg 100% 50%) ;
     --secondary-color:hsl(186.05deg 86.58% 29.22%);
     --accent-color: #3d5a80;  
     --neutral-color: #f4f7f2; 
@@ -41,9 +41,38 @@ body {
     font-size: 15px;
     background-image: url(./images/Background.png);
 }
+header{
+    background-color: #fff;
+}
+.header-container{
+    box-shadow: 0px 0px 20px 1px rgb(202, 206, 204);
+}
 .container-fluid .row{
     max-width: 1678px;
     margin: 0px auto;
+}
+.user{
+    border-left: 1px solid rgb(209, 209, 209);
+}
+.user a{
+    color: #000;
+    font-weight: bold;
+}
+.user a span:nth-child(2){
+    color: var(--secondary-color);
+}
+.cart{
+    position: relative;
+}
+.cart span{
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: -12px;
+    font-size: .6em;
 }
 .main-nav {
     position: relative; 
@@ -324,10 +353,26 @@ body {
     transition: background-color 0.2s;
   }
   .search-input{
-    width: 80%;
+    width: 70%;
+    position: relative;
   }
   .search-input input{
     width: 100%;
+    border: 1px solid var(--secondary-color) !important;
+    background-color: hsl(212deg 40.54% 92.75%);
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .search-input img{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .search-input input::placeholder{
+    font-size: .8em;
+    color: var(--secondary-color);
+
   }
   .baner-item{
     /* height: 550px; */
@@ -470,8 +515,40 @@ height: 260px;
 }
 .pro-baner-txt{
     position: absolute;
-    top: 10%;
-    right: 10%
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%
+}
+.product-gallery-one .pro-baner-txt h2{
+    font-weight: bold;
+    font-family: IRANYekanWebBold;
+}
+.product-gallery-one .pro-baner-txt a{
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 3px 25px;
+    border-radius: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family:IRANYekanWebBold ;
+    
+}
+.product-gallery-two .pro-baner-txt h2{
+    width: 120px;
+    font-weight: bold;
+    font-family: IRANYekanWebBold;
+    color: #fff;
+    font-size: 1.7em;
+}
+.product-gallery-two .pro-baner-txt a{
+    background-color: var(--primary-color);
+    color: #000;
+    padding: 3px 25px;
+    border-radius: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family:IRANYekanWebBold ;
+    
 }
 .sale-back{
     background-color: var(--secondary-color);
