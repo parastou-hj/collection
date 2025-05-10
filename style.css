@@ -222,11 +222,12 @@ header {
 
 .mobile-nav > ul > li {
     border-bottom: 1px solid #eee;
+      padding: 15px 0;
 }
 
 .mobile-nav > ul > li > a {
-    display: block;
-    padding: 12px 0;
+    /* display: block; */
+    /* padding: 12px 0; */
     color: #333;
     text-decoration: none;
     font-size: 16px;
@@ -847,6 +848,7 @@ header {
 .sub-menu-items {
     padding: 0;
 }
+
 .s-b-item a {
     display: block;
     padding: 9px 5px;
@@ -1849,4 +1851,122 @@ a{
 }
 @media (max-width: 480px) {
     
+}
+
+
+/* اضافه کردن به فایل style.css */
+
+/* Submenu Panel Styles */
+.mobile-submenu-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2001;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-submenu-panel.active {
+    right: 0;
+}
+
+/* Submenu Header */
+.submenu-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+    background-color: #f8f9fa;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.back-button i {
+    margin-left: 8px;
+}
+
+.submenu-header span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Submenu Items */
+.submenu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu-items li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.submenu-items li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.submenu-items li a:hover {
+    background-color: #f8f9fa;
+    color: var(--secondary-color);
+    padding-right: 25px;
+}
+
+/* Main menu adjustments */
+.mobile-has-submenu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-has-submenu i {
+    color: #999;
+    font-size: 12px;
+    transition: transform 0.2s ease;
+    float: left;
+}
+
+.mobile-has-submenu a:hover i {
+    transform: translateX(-3px);
+}
+
+/* Remove old submenu toggle button */
+.mobile-submenu-toggle {
+    display: none;
+}
+
+/* Animation for main menu */
+.mobile-side-menu {
+    transition: transform 0.3s ease;
+}
+
+.mobile-side-menu.submenu-open {
+    /* transform: translateX(-50px); */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .mobile-side-menu,
+    .mobile-submenu-panel {
+        width: 85%;
+    }
 }

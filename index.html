@@ -337,34 +337,22 @@
                 <ul>
                     <li><a href="#">صفحه اصلی</a></li>
                     <li class="mobile-has-submenu">
-                        <a href="#">اسکناس ها</a>
-                        <span class="mobile-submenu-toggle">+</span>
-                        <ul class="mobile-submenu">
-                            <li><a href="#">همه اسکناس ها</a></li>
-                            <li><a href="#">اسکناس های داخلی</a></li>
-                            <li><a href="#">اسکناس های خارجی</a></li>
-                            <li><a href="#">اسکناس های کمیاب</a></li>
-                        </ul>
+                        <a href="#" class="mobile-submenu-trigger" data-submenu="banknotes">
+                            اسکناس ها
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
                     </li>
                     <li class="mobile-has-submenu">
-                        <a href="#">سکه ها</a>
-                        <span class="mobile-submenu-toggle">+</span>
-                        <ul class="mobile-submenu">
-                            <li><a href="#">همه سکه ها</a></li>
-                            <li><a href="#">سکه های داخلی</a></li>
-                            <li><a href="#">سکه های خارجی</a></li>
-                            <li><a href="#">سکه های کمیاب</a></li>
-                        </ul>
+                        <a href="#" class="mobile-submenu-trigger" data-submenu="coins">
+                            سکه ها
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
                     </li>
                     <li class="mobile-has-submenu">
-                        <a href="#">لوازم جانبی</a>
-                        <span class="mobile-submenu-toggle">+</span>
-                        <ul class="mobile-submenu">
-                            <li><a href="#">زیر منو تستی</a></li>
-                            <li><a href="#">زیر منو تستی</a></li>
-                            <li><a href="#">زیر منو تستی</a></li>
-                            <li><a href="#">زیر منو تستی</a></li>
-                        </ul>
+                        <a href="#" class="mobile-submenu-trigger" data-submenu="accessories">
+                            لوازم جانبی
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
                     </li>
                     <li><a href="#">دانستنی ها</a></li>
                     <li><a href="#">درباره ما</a></li>
@@ -376,6 +364,55 @@
                     <span>ورود / ثبت نام</span>
                 </a>
             </div>
+        </div>
+        
+        <!-- Submenu Panels -->
+        <div class="mobile-submenu-panel" id="banknotes-submenu">
+            <div class="submenu-header">
+                <button class="back-button">
+                    <i class="fa fa-chevron-right"></i>
+                    بازگشت
+                </button>
+                <span>اسکناس ها</span>
+            </div>
+            <ul class="submenu-items">
+                <li><a href="#">همه اسکناس ها</a></li>
+                <li><a href="#">اسکناس های داخلی</a></li>
+                <li><a href="#">اسکناس های خارجی</a></li>
+                <li><a href="#">اسکناس های کمیاب</a></li>
+            </ul>
+        </div>
+        
+        <div class="mobile-submenu-panel" id="coins-submenu">
+            <div class="submenu-header">
+                <button class="back-button">
+                    <i class="fa fa-chevron-right"></i>
+                    بازگشت
+                </button>
+                <span>سکه ها</span>
+            </div>
+            <ul class="submenu-items">
+                <li><a href="#">همه سکه ها</a></li>
+                <li><a href="#">سکه های داخلی</a></li>
+                <li><a href="#">سکه های خارجی</a></li>
+                <li><a href="#">سکه های کمیاب</a></li>
+            </ul>
+        </div>
+        
+        <div class="mobile-submenu-panel" id="accessories-submenu">
+            <div class="submenu-header">
+                <button class="back-button">
+                    <i class="fa fa-chevron-right"></i>
+                    بازگشت
+                </button>
+                <span>لوازم جانبی</span>
+            </div>
+            <ul class="submenu-items">
+                <li><a href="#">آلبوم سکه</a></li>
+                <li><a href="#">آلبوم اسکناس</a></li>
+                <li><a href="#">کپسول سکه</a></li>
+                <li><a href="#">ذره‌بین</a></li>
+            </ul>
         </div>
         
         <!-- Overlay for mobile menu -->

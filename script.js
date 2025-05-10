@@ -386,41 +386,77 @@ $(document).ready(function() {
 });
 
 // Mobile menu functionality
+// روش دوم - با استفاده از data attribute
+// در فایل script.js، تمام کدهای منوی موبایل قدیمی را حذف کنید و این کد را جایگزین کنید
+
 $(document).ready(function() {
-  // Toggle mobile menu
-  $('.mobile-menu-toggle').click(function() {
+  // Toggle main mobile menu
+  $('.mobile-menu-toggle').on('click', function() {
       $(this).toggleClass('active');
       $('.mobile-side-menu').toggleClass('active');
       $('.mobile-menu-overlay').toggleClass('active');
       $('body').toggleClass('menu-open');
   });
   
-  // Close mobile menu
-  $('.close-mobile-menu, .mobile-menu-overlay').click(function() {
+  // Close main menu
+  $('.close-mobile-menu, .mobile-menu-overlay').on('click', function() {
+      closeAllMenus();
+  });
+  
+  // Open submenu panel
+  $('.mobile-submenu-trigger').on('click', function(e) {
+      e.preventDefault();
+      
+      var submenuId = $(this).data('submenu');
+      var $submenuPanel = $('#' + submenuId + '-submenu');
+      
+      // Add class to main menu for slide effect
+      $('.mobile-side-menu').addClass('submenu-open');
+      
+      // Open the submenu panel
+      $submenuPanel.addClass('active');
+      
+      // Prevent scrolling on main menu
+      $('.mobile-side-menu').css('overflow', 'hidden');
+  });
+  
+  // Back button functionality
+  $('.back-button').on('click', function() {
+      var $submenuPanel = $(this).closest('.mobile-submenu-panel');
+      
+      // Close submenu panel
+      $submenuPanel.removeClass('active');
+      
+      // Remove slide effect from main menu
+      $('.mobile-side-menu').removeClass('submenu-open');
+      
+      // Restore scrolling on main menu
+      setTimeout(function() {
+          $('.mobile-side-menu').css('overflow', 'auto');
+      }, 300);
+  });
+  
+  // Close all menus function
+  function closeAllMenus() {
       $('.mobile-menu-toggle').removeClass('active');
-      $('.mobile-side-menu').removeClass('active');
+      $('.mobile-side-menu').removeClass('active submenu-open');
+      $('.mobile-submenu-panel').removeClass('active');
       $('.mobile-menu-overlay').removeClass('active');
       $('body').removeClass('menu-open');
-  });
+      $('.mobile-side-menu').css('overflow', 'auto');
+  }
   
-  // Toggle submenu
-  $('.mobile-submenu-toggle').click(function() {
-      $(this).siblings('.mobile-submenu').slideToggle();
-      if ($(this).text() === '+') {
-          $(this).text('-');
-      } else {
-          $(this).text('+');
-      }
-  });
-  
-  // Close menu on window resize if going to desktop size
+  // Close menu on window resize
   $(window).resize(function() {
       if ($(window).width() > 991) {
-          $('.mobile-menu-toggle').removeClass('active');
-          $('.mobile-side-menu').removeClass('active');
-          $('.mobile-menu-overlay').removeClass('active');
-          $('body').removeClass('menu-open');
+          closeAllMenus();
       }
+  });
+  
+  // Close submenu when clicking on a link
+  $('.submenu-items a').on('click', function() {
+      // اگر می‌خواهید با کلیک روی لینک، منو بسته شود
+      // closeAllMenus();
   });
 });
 
